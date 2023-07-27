@@ -8,11 +8,34 @@ Vamos a trabajar con nuestra primera base de datos de SQL. Crea una base de dato
     - `rooms`: int (número de habitaciones).
     - `bathrooms`: int (número de baños).
     - `area`: numeric (metros cuadrados).
+
+```SQL 
+    CREATE TABLE apartments(
+	apartment_id INTEGER PRIMARY KEY,
+	name CHAR,
+	rooms INTEGER,
+	bathrooms INTEGER,
+	area NUMERIC
+    );
+```
+
 2. Tabla `families` con las siguientes columnas:
     - `family_id`: primary key, serial.
     - `name`: string.
     - `members`: int (número de miembros).
     - `apartment`: int (`id` de la tabla `apartments`).
+
+```SQL
+CREATE TABLE families (
+	family_id INTEGER PRIMARY KEY,
+	name CHAR,
+	members INTEGER,
+	apartment INTEGER,
+	CONSTRAINT fk_apartments
+		FOREIGN KEY(apartment)
+			REFERENCES apartments(apartment_id)
+);
+```
 
 ### [](https://github.com/GammaTechSchool/MAD_PART_JsCao_1/blob/main/src/backend/exercises/sql1.md#ejercicio-2)Ejercicio 2
 
