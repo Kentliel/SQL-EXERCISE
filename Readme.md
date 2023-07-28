@@ -98,7 +98,7 @@ Realiza las siguientes consultas a la base de datos:
 
 8. Obtén todas las columnas de las familias que vivan en pisos de más de `74` metros cuadrados.
 
-![](https://i.imgur.com/mpxQQRX.png)
+![](https://i.imgur.com/nVwo1cO.png)
 
 9. Obtén el nombre de los pisos que tengan más de `2` inquilinos.
 
